@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "sampling": {
+        "isEnabled": false
+      }
+    }
+  },
+  "extensions": {
+    "durableTask": {
+      //"HubName": "V2FunctionsLoadTest",
+      "extendedSessionsEnabled": true,
+      "extendedSessionIdleTimeoutInSeconds": 30,
+      "maxConcurrentActivityFunctions": 1000,
+      "maxConcurrentOrchestratorFunctions": 500
+    }
+  }
+}
